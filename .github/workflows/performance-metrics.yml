@@ -1,0 +1,489 @@
+name: Update Performance Metrics
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate live performance metrics
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USERNAME: Gaurav-giradkar
+        run: |
+          python3 <<'PY'
+          import os
+          import json
+          import urllib.request
+          import html
+          from collections import Counter
+
+          TOKEN = os.environ["GITHUB_TOKEN"]
+          USERNAME = os.environ["GITHUB_USERNAME"]
+
+          headers = {
+              "Authorization": f"Bearer {TOKEN}",
+              "Accept": "application/vnd.github+json",
+              "User-Agent": "github-performance-metrics"
+          }
+
+          def request(url):
+              req = urllib.request.Request(url, headers=headers)
+              with urllib.request.urlopen(req) as response:
+                  return json.loads(response.read())
+
+          # -----------------------------
+          # USER / REPOSITORIES
+          # -----------------------------
+
+          user = request(
+              f"https://api.github.com/users/{USERNAME}"
+          )
+
+          repos = []
+          page = 1
+
+          while True:
+              data = request(
+                  f"https://api.github.com/users/{USERNAME}/repos"
+                  f"?per_page=100&page={page}&type=owner"
+              )
+
+              if not data:
+                  break
+
+              repos.extend(data)
+
+              if len(data) < 100:
+                  break
+
+              page += 1
+
+          repositories = len(repos)
+
+          stars = sum(
+              repo.get("stargazers_count", 0)
+              for repo in repos
+          )
+
+          # -----------------------------
+          # LANGUAGES
+          # -----------------------------
+
+          languages = Counter()
+
+          for repo in repos:
+              language = repo.get("language")
+
+              if language:
+                  languages[language] += 1
+
+          top_languages = languages.most_common(5)
+
+          # -----------------------------
+          # GITHUB GRAPHQL
+          # -----------------------------
+
+          query = """
+          query($login:String!) {
+            user(login:$login) {
+              contributionsCollection {
+                totalCommitContributions
+                totalPullRequestContributions
+                totalIssueContributions
+                totalRepositoryContributions
+                restrictedContributionsCount
+              }
+            }
+          }
+          """
+
+          payload = json.dumps({
+              "query": query,
+              "variables": {
+                  "login": USERNAME
+              }
+          }).encode()
+
+          req = urllib.request.Request(
+              "https://api.github.com/graphql",
+              data=payload,
+              headers={
+                  **headers,
+                  "Content-Type": "application/json"
+              }
+          )
+
+          with urllib.request.urlopen(req) as response:
+              graphql = json.loads(response.read())
+
+          contributions = graphql["data"]["user"]["contributionsCollection"]
+
+          commits = contributions["totalCommitContributions"]
+          pull_requests = contributions["totalPullRequestContributions"]
+          issues = contributions["totalIssueContributions"]
+
+          contribution_total = (
+              commits
+              + pull_requests
+              + issues
+              + contributions["totalRepositoryContributions"]
+              + contributions["restrictedContributionsCount"]
+          )
+
+          # -----------------------------
+          # SVG
+          # -----------------------------
+
+          width = 900
+          height = 430
+
+          bg = "#111827"
+          border = "#273244"
+          text = "#F9FAFB"
+          muted = "#9CA3AF"
+          cyan = "#22D3EE"
+          green = "#22C55E"
+          purple = "#8B5CF6"
+
+          def esc(value):
+              return html.escape(str(value))
+
+          svg = f'''<svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="{width}"
+          height="{height}"
+          viewBox="0 0 {width} {height}">
+
+          <rect
+            width="900"
+            height="430"
+            rx="14"
+            fill="{bg}"/>
+
+          <rect
+            x="1"
+            y="1"
+            width="898"
+            height="428"
+            rx="13"
+            fill="none"
+            stroke="{border}"/>
+
+          <text
+            x="32"
+            y="42"
+            fill="{text}"
+            font-family="monospace"
+            font-size="22"
+            font-weight="700">
+            PERFORMANCE METRICS
+          </text>
+
+          <line
+            x1="32"
+            y1="62"
+            x2="868"
+            y2="62"
+            stroke="{border}"/>
+
+          <!-- GitHub Activity -->
+
+          <text
+            x="32"
+            y="98"
+            fill="{cyan}"
+            font-family="monospace"
+            font-size="16"
+            font-weight="700">
+            GITHUB ACTIVITY
+          </text>
+
+          <text x="32" y="135"
+            fill="{muted}"
+            font-family="monospace"
+            font-size="13">
+            COMMITS
+          </text>
+
+          <text x="210" y="135"
+            fill="{text}"
+            font-family="monospace"
+            font-size="15"
+            font-weight="700">
+            {commits}
+          </text>
+
+          <text x="32" y="168"
+            fill="{muted}"
+            font-family="monospace"
+            font-size="13">
+            REPOSITORIES
+          </text>
+
+          <text x="210" y="168"
+            fill="{text}"
+            font-family="monospace"
+            font-size="15"
+            font-weight="700">
+            {repositories}
+          </text>
+
+          <text x="32" y="201"
+            fill="{muted}"
+            font-family="monospace"
+            font-size="13">
+            PULL REQUESTS
+          </text>
+
+          <text x="210" y="201"
+            fill="{text}"
+            font-family="monospace"
+            font-size="15"
+            font-weight="700">
+            {pull_requests}
+          </text>
+
+          <text x="32" y="234"
+            fill="{muted}"
+            font-family="monospace"
+            font-size="13">
+            ISSUES
+          </text>
+
+          <text x="210" y="234"
+            fill="{text}"
+            font-family="monospace"
+            font-size="15"
+            font-weight="700">
+            {issues}
+          </text>
+
+          <text x="32" y="267"
+            fill="{muted}"
+            font-family="monospace"
+            font-size="13">
+            STARS
+          </text>
+
+          <text x="210" y="267"
+            fill="{text}"
+            font-family="monospace"
+            font-size="15"
+            font-weight="700">
+            {stars}
+          </text>
+
+          <!-- Contributions -->
+
+          <line
+            x1="290"
+            y1="90"
+            x2="290"
+            y2="285"
+            stroke="{border}"/>
+
+          <text
+            x="325"
+            y="98"
+            fill="{cyan}"
+            font-family="monospace"
+            font-size="16"
+            font-weight="700">
+            CONTRIBUTIONS
+          </text>
+
+          <text
+            x="325"
+            y="150"
+            fill="{text}"
+            font-family="monospace"
+            font-size="40"
+            font-weight="700">
+            {contribution_total}
+          </text>
+
+          <text
+            x="325"
+            y="175"
+            fill="{muted}"
+            font-family="monospace"
+            font-size="11">
+            CONTRIBUTIONS THIS YEAR
+          </text>
+
+          <rect
+            x="325"
+            y="215"
+            width="170"
+            height="10"
+            rx="5"
+            fill="#1F2937"/>
+
+          <rect
+            x="325"
+            y="215"
+            width="{min(170, max(8, contribution_total / 300 * 170))}"
+            height="10"
+            rx="5"
+            fill="{green}"/>
+
+          <text
+            x="325"
+            y="255"
+            fill="{muted}"
+            font-family="monospace"
+            font-size="11">
+            ACTIVE BUILDER
+          </text>
+
+          <!-- Focus -->
+
+          <line
+            x1="540"
+            y1="90"
+            x2="540"
+            y2="285"
+            stroke="{border}"/>
+
+          <text
+            x="575"
+            y="98"
+            fill="{cyan}"
+            font-family="monospace"
+            font-size="16"
+            font-weight="700">
+            CURRENT FOCUS
+          </text>
+
+          <text x="575" y="140"
+            fill="{text}"
+            font-family="monospace"
+            font-size="14">
+            01  AI SYSTEMS
+          </text>
+
+          <text x="575" y="175"
+            fill="{text}"
+            font-family="monospace"
+            font-size="14">
+            02  SOFTWARE
+          </text>
+
+          <text x="575" y="210"
+            fill="{text}"
+            font-family="monospace"
+            font-size="14">
+            03  PRODUCT
+          </text>
+
+          <text x="575" y="245"
+            fill="{text}"
+            font-family="monospace"
+            font-size="14">
+            04  DESIGN
+          </text>
+
+          <!-- Languages -->
+
+          <line
+            x1="32"
+            y1="305"
+            x2="868"
+            y2="305"
+            stroke="{border}"/>
+
+          <text
+            x="32"
+            y="338"
+            fill="{cyan}"
+            font-family="monospace"
+            font-size="16"
+            font-weight="700">
+            MOST USED TECHNOLOGIES
+          </text>
+          '''
+
+          # Language bar
+
+          total_languages = sum(v for _, v in top_languages) or 1
+
+          colors = [
+              "#3B82F6",
+              "#F59E0B",
+              "#8B5CF6",
+              "#22C55E",
+              "#06B6D4"
+          ]
+
+          x = 32
+          bar_width = 836
+
+          for i, (language, count) in enumerate(top_languages):
+              segment = bar_width * count / total_languages
+
+              svg += f'''
+              <rect
+                x="{x}"
+                y="355"
+                width="{segment}"
+                height="12"
+                fill="{colors[i]}"
+              />
+              '''
+
+              x += segment
+
+          # Language labels
+
+          x = 32
+
+          for i, (language, count) in enumerate(top_languages):
+              svg += f'''
+              <text
+                x="{x}"
+                y="395"
+                fill="{muted}"
+                font-family="monospace"
+                font-size="11">
+                {esc(language).upper()}
+              </text>
+              '''
+
+              x += 150
+
+          svg += "</svg>"
+
+          os.makedirs("assets", exist_ok=True)
+
+          with open(
+              "assets/performance-metrics.svg",
+              "w",
+              encoding="utf-8"
+          ) as file:
+              file.write(svg)
+
+          print("Performance metrics generated successfully.")
+          PY
+
+      - name: Commit updated metrics
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add assets/performance-metrics.svg
+
+          git diff --cached --quiet || \
+            git commit -m "Update live performance metrics"
+
+          git push

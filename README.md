@@ -307,27 +307,15 @@ BUILD IT BETTER
 </pre>
 </div>
 
-<hr>
-
-<h2>📊 Performance Metrics</h2>
+<h2><code>&gt; performance.metrics</code></h2>
 
 <p align="center">
   <img
-    src="./profile-summary-card-output/github_dark/3-stats.svg"
+    src="./assets/performance-metrics.svg"
     width="100%"
-    alt="GitHub Statistics"
+    alt="Live GitHub Performance Metrics"
   />
 </p>
-
-<p align="center">
-  <img
-    src="./profile-summary-card-output/github_dark/1-repos-per-language.svg"
-    width="100%"
-    alt="Most Used Languages"
-  />
-</p>
-
-<hr>
 
 <h2>🐍 Contribution Snake</h2>
 
