@@ -1,8 +1,6 @@
 <div align="center">
 
-<p align="center">
-  <img src="./assets/header.svg" width="100%" alt="Gaurav Giradkar" />
-</p>
+<img src="./assets/header.svg" width="100%" alt="Gaurav Giradkar" />
 
 </div>
 
@@ -134,13 +132,7 @@ If you're building something interesting, solving a difficult problem, or simply
 
 <br><br>
 
-<a href="https://github.com/Gaurav-giradkar">
-  <img src="https://img.shields.io/badge/GITHUB-111827?style=for-the-badge&logo=github&logoColor=white" />
-</a>
-&nbsp;
-<a href="mailto:gauravgiradkar59@gmail.com">
-  <img src="https://img.shields.io/badge/EMAIL-111827?style=for-the-badge&logo=gmail&logoColor=white" />
-</a>
+**GITHUB** • **EMAIL**
 
 </div>
 
