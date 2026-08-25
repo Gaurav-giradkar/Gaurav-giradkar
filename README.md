@@ -1,0 +1,536 @@
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&height=240&color=0:0B1020,50:111827,100:0B1020&text=GAURAV%20GIRADKAR&fontSize=48&fontColor=F8FAFC&fontAlignY=38&desc=TECHNOLOGY%20BUILDER&descSize=18&descAlignY=58&descColor=22D3EE&animation=fadeIn" width="100%">
+
+<br>
+
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=17&duration=2800&pause=1000&color=22D3EE&center=true&vCenter=true&width=700&lines=AI+%E2%80%A2+SOFTWARE+%E2%80%A2+PRODUCT+%E2%80%A2+DESIGN;Turning+ideas+into+working+products.;Learn+%E2%86%92+Build+%E2%86%92+Test+%E2%86%92+Improve" alt="Typing animation">
+
+<br><br>
+
+<a href="https://github.com/Gaurav-giradkar">
+<img src="https://img.shields.io/badge/GitHub-0B1020?style=for-the-badge&logo=github&logoColor=white">
+</a>
+
+<a href="mailto:gauravgiradkar59@gmail.com">
+<img src="https://img.shields.io/badge/Email-0B1020?style=for-the-badge&logo=gmail&logoColor=EA4335">
+</a>
+
+</div>
+
+---
+
+<hr>
+
+<h2><code>&gt; who.am.i</code></h2>
+
+<table>
+<tr>
+<td width="65%" valign="top">
+
+<h3>Technology-focused builder & problem solver.</h3>
+
+<p>
+I like turning ideas into <b>actual products</b> rather than stopping at concepts.
+</p>
+
+<p>
+My interests sit at the intersection of:
+</p>
+
+<p align="center">
+<b>AI × SOFTWARE × PRODUCT × DESIGN</b>
+</p>
+
+<p>
+I enjoy working across the entire process — from understanding a problem and designing an experience to building the system, integrating AI and shipping a working product.
+</p>
+
+<p>
+I'm still figuring out exactly what kind of builder I want to become, but the direction is clear:
+</p>
+
+<blockquote>
+<b>Build things that are useful, intelligent and capable of becoming something bigger.</b>
+</blockquote>
+
+</td>
+
+<td width="35%" valign="top">
+
+<h3><code>CURRENT MODE</code></h3>
+
+<pre>
+┌───────────────────────┐
+│                       │
+│  BUILDING             │
+│  ██████████████████   │
+│                       │
+│  LEARNING             │
+│  █████████████████░   │
+│                       │
+│  EXPLORING            │
+│  ████████████████░░   │
+│                       │
+│  STATUS               │
+│  ● ACTIVE             │
+│                       │
+└───────────────────────┘
+</pre>
+
+</td>
+</tr>
+</table>
+
+<br>
+
+<table>
+<tr>
+
+<td width="50%" valign="top">
+
+<h2><code>&gt; my.vision</code></h2>
+
+<h3>Build technology that matters.</h3>
+
+<p>
+I want to become a <b>strong technology entrepreneur and product builder</b> capable of taking an idea from zero to a real, scalable product.
+</p>
+
+<p>I want to build technology that is:</p>
+
+<ul>
+<li><b>Useful</b> — solves problems people actually have</li>
+<li><b>Intelligent</b> — uses technology and AI meaningfully</li>
+<li><b>Well-designed</b> — simple, intuitive and purposeful</li>
+<li><b>Scalable</b> — capable of growing beyond a prototype</li>
+</ul>
+
+<blockquote>
+I want to build products that can become something much bigger.
+</blockquote>
+
+</td>
+
+<td width="50%" valign="top">
+
+<h2><code>&gt; my.mission</code></h2>
+
+<h3>Learn → Build → Test → Improve</h3>
+
+<p>
+I learn primarily by <b>building</b>.
+</p>
+
+<pre>
+       LEARN
+         ↓
+       BUILD
+         ↓
+        TEST
+         ↓
+      IMPROVE
+         ↓
+       REPEAT
+</pre>
+
+<p>
+I combine <b>technology, AI, design and problem-solving</b> to turn ideas into working products.
+</p>
+
+<blockquote>
+An imperfect working product teaches more than a perfect idea that was never built.
+</blockquote>
+
+</td>
+
+</tr>
+</table>
+
+<hr>
+
+<hr>
+
+<table>
+<tr>
+
+<td width="50%" valign="top">
+
+<h2><code>&gt; what.i.do</code></h2>
+
+<h3>01 · AI SYSTEMS</h3>
+
+<p>
+Building applications that use AI for real functionality — not just as a feature added for the sake of it.
+</p>
+
+<h3>02 · SOFTWARE</h3>
+
+<p>
+Developing full-stack applications across frontend, backend, APIs and databases.
+</p>
+
+<h3>03 · PRODUCT</h3>
+
+<p>
+Turning ideas into usable products — from problem definition and architecture to deployment.
+</p>
+
+<h3>04 · DESIGN</h3>
+
+<p>
+Creating interfaces that are intuitive, purposeful and enjoyable to use.
+</p>
+
+</td>
+
+<td width="50%" valign="top">
+
+<h2><code>&gt; what.i.value</code></h2>
+
+<p>
+<b>01 · CURIOSITY</b><br>
+<sub>Keep exploring.</sub>
+</p>
+
+<p>
+<b>02 · EXECUTION</b><br>
+<sub>Build instead of just talking.</sub>
+</p>
+
+<p>
+<b>03 · INNOVATION</b><br>
+<sub>Look for better solutions.</sub>
+</p>
+
+<p>
+<b>04 · GROWTH</b><br>
+<sub>Keep getting better.</sub>
+</p>
+
+<p>
+<b>05 · IMPACT</b><br>
+<sub>Build things that matter.</sub>
+</p>
+
+<p>
+<b>06 · INDEPENDENCE</b><br>
+<sub>Figure things out and build.</sub>
+</p>
+
+</td>
+
+</tr>
+</table>
+
+<hr>
+
+<hr>
+
+<h2><code>&gt; tech.stack</code></h2>
+
+<table>
+<tr>
+<td width="20%"><b>LANGUAGES</b></td>
+<td>
+<img src="https://img.shields.io/badge/C%2B%2B-0D1117?style=flat-square&logo=cplusplus&logoColor=61DAFB">
+<img src="https://img.shields.io/badge/JavaScript-0D1117?style=flat-square&logo=javascript&logoColor=F7DF1E">
+<img src="https://img.shields.io/badge/TypeScript-0D1117?style=flat-square&logo=typescript&logoColor=3178C6">
+<img src="https://img.shields.io/badge/Python-0D1117?style=flat-square&logo=python&logoColor=3776AB">
+<img src="https://img.shields.io/badge/Java-0D1117?style=flat-square&logo=openjdk&logoColor=ED8B00">
+</td>
+</tr>
+
+<tr>
+<td><b>FRONTEND</b></td>
+<td>
+<img src="https://img.shields.io/badge/React-0D1117?style=flat-square&logo=react&logoColor=61DAFB">
+<img src="https://img.shields.io/badge/Next.js-0D1117?style=flat-square&logo=next.js&logoColor=FFFFFF">
+<img src="https://img.shields.io/badge/Tailwind-0D1117?style=flat-square&logo=tailwindcss&logoColor=06B6D4">
+<img src="https://img.shields.io/badge/HTML5-0D1117?style=flat-square&logo=html5&logoColor=E34F26">
+<img src="https://img.shields.io/badge/CSS3-0D1117?style=flat-square&logo=css3&logoColor=1572B6">
+</td>
+</tr>
+
+<tr>
+<td><b>BACKEND</b></td>
+<td>
+<img src="https://img.shields.io/badge/Node.js-0D1117?style=flat-square&logo=node.js&logoColor=339933">
+<img src="https://img.shields.io/badge/Express-0D1117?style=flat-square&logo=express&logoColor=FFFFFF">
+<img src="https://img.shields.io/badge/Flask-0D1117?style=flat-square&logo=flask&logoColor=FFFFFF">
+<img src="https://img.shields.io/badge/REST_API-0D1117?style=flat-square&logo=fastapi&logoColor=009688">
+</td>
+</tr>
+
+<tr>
+<td><b>AI / DATA</b></td>
+<td>
+<img src="https://img.shields.io/badge/Google_Gemini-0D1117?style=flat-square&logo=googlegemini&logoColor=8E75B2">
+<img src="https://img.shields.io/badge/Embeddings-0D1117?style=flat-square&logo=openai&logoColor=FFFFFF">
+<img src="https://img.shields.io/badge/Firebase-0D1117?style=flat-square&logo=firebase&logoColor=FFCA28">
+<img src="https://img.shields.io/badge/MongoDB-0D1117?style=flat-square&logo=mongodb&logoColor=47A248">
+<img src="https://img.shields.io/badge/MySQL-0D1117?style=flat-square&logo=mysql&logoColor=4479A1">
+</td>
+</tr>
+
+<tr>
+<td><b>TOOLS</b></td>
+<td>
+<img src="https://img.shields.io/badge/Git-0D1117?style=flat-square&logo=git&logoColor=F05032">
+<img src="https://img.shields.io/badge/GitHub-0D1117?style=flat-square&logo=github&logoColor=FFFFFF">
+<img src="https://img.shields.io/badge/Figma-0D1117?style=flat-square&logo=figma&logoColor=F24E1E">
+<img src="https://img.shields.io/badge/Postman-0D1117?style=flat-square&logo=postman&logoColor=FF6C37">
+<img src="https://img.shields.io/badge/VS_Code-0D1117?style=flat-square&logo=visualstudiocode&logoColor=007ACC">
+</td>
+</tr>
+</table>
+
+<hr>
+
+<hr>
+
+<table>
+<tr>
+
+<td width="50%" valign="top">
+
+<h2><code>&gt; short.term.goals</code></h2>
+
+<ul>
+<li>Become significantly stronger in <b>AI, software engineering and product development</b>.</li>
+<li>Build and ship more serious products beyond basic academic or demo projects.</li>
+<li>Improve my <b>UI/UX and product thinking</b>.</li>
+<li>Perform strongly in <b>hackathons and technical competitions</b>.</li>
+<li>Build a portfolio that demonstrates what I can actually create.</li>
+<li>Become more independent at taking an idea from <b>concept → design → development → deployment</b>.</li>
+</ul>
+
+</td>
+
+<td width="50%" valign="top">
+
+<h2><code>&gt; long.term.goals</code></h2>
+
+<ul>
+<li>Become a <b>high-level product engineer and technology entrepreneur</b>.</li>
+<li>Build products that reach and help <b>real users</b>.</li>
+<li>Start or lead a <b>technology company/product</b> of my own.</li>
+<li>Combine <b>AI + engineering + design</b> to create products with real-world impact.</li>
+<li>Move beyond individual projects and eventually build something <b>much bigger</b>.</li>
+</ul>
+
+</td>
+
+</tr>
+</table>
+
+<br>
+
+<div align="center">
+
+<pre>
+┌──────────────────────────────────────────────────────┐
+│                                                      │
+│                 IDEA → PRODUCT → SCALE               │
+│                                                      │
+│       BUILDING TOWARDS SOMETHING BIGGER              │
+│                                                      │
+└──────────────────────────────────────────────────────┘
+</pre>
+
+</div>
+
+<hr>
+
+<hr>
+
+<h2><code>&gt; github.activity</code></h2>
+
+<table>
+<tr>
+
+<td width="50%" valign="top">
+
+<h3>GITHUB STATISTICS</h3>
+
+<img
+src="https://github-readme-stats.vercel.app/api?username=Gaurav-giradkar&show_icons=true&hide_border=true&bg_color=0D1117&title_color=22D3EE&icon_color=A78BFA&text_color=F0F6FC&rank_icon=github&include_all_commits=true"
+width="100%"
+alt="GitHub Statistics"
+/>
+
+</td>
+
+<td width="50%" valign="top">
+
+<h3>LANGUAGE DISTRIBUTION</h3>
+
+<img
+src="https://github-readme-stats.vercel.app/api/top-langs/?username=Gaurav-giradkar&layout=compact&hide_border=true&bg_color=0D1117&title_color=22D3EE&text_color=F0F6FC&langs_count=8"
+width="100%"
+alt="Most Used Languages"
+/>
+
+</td>
+
+</tr>
+</table>
+
+<br>
+
+<div align="center">
+
+<h3>CONTRIBUTION STREAK</h3>
+
+<img
+src="https://github-readme-streak-stats.herokuapp.com/?user=Gaurav-giradkar&hide_border=true&background=0D1117&ring=22D3EE&fire=A78BFA&currStreakLabel=22D3EE&sideLabels=F0F6FC&dates=8B949E"
+width="75%"
+alt="GitHub Streak"
+/>
+
+</div>
+
+<br>
+
+<div align="center">
+
+<h3>CONTRIBUTION ACTIVITY</h3>
+
+<img
+src="https://github-readme-activity-graph.vercel.app/graph?username=Gaurav-giradkar&bg_color=0D1117&color=22D3EE&line=A78BFA&point=F0F6FC&area=true&hide_border=true&custom_title=Gaurav's%20Contribution%20Activity"
+width="100%"
+alt="Contribution Activity"
+/>
+
+</div>
+
+<hr>
+
+<hr>
+
+<h2><code>&gt; currently.learning</code></h2>
+
+<table>
+<tr>
+
+<td width="33%" valign="top">
+
+<h3>AI SYSTEMS</h3>
+
+<p>
+Going deeper into <b>AI application development</b>, intelligent workflows, embeddings, memory systems and practical AI integration.
+</p>
+
+</td>
+
+<td width="33%" valign="top">
+
+<h3>SOFTWARE ENGINEERING</h3>
+
+<p>
+Strengthening <b>architecture, backend development, APIs, databases and system design</b> to build more robust products.
+</p>
+
+</td>
+
+<td width="33%" valign="top">
+
+<h3>PRODUCT & DESIGN</h3>
+
+<p>
+Improving <b>UI/UX, product thinking and user experience</b> so the things I build are not only functional, but genuinely usable.
+</p>
+
+</td>
+
+</tr>
+</table>
+
+<br>
+
+<div align="center">
+
+<pre>
+LEARN SOMETHING
+      ↓
+BUILD WITH IT
+      ↓
+BREAK IT
+      ↓
+UNDERSTAND WHY
+      ↓
+BUILD IT BETTER
+</pre>
+
+</div>
+
+<hr>
+
+<hr>
+
+<h2><code>&gt; contribution.activity</code></h2>
+
+<div align="center">
+
+<img
+src="./output/github-contribution-grid-snake.svg"
+alt="GitHub Contribution Snake"
+width="100%"
+>
+
+</div>
+
+<hr>
+
+<hr>
+
+<h2><code>&gt; connect</code></h2>
+
+<div align="center">
+
+<p>
+If you're building something interesting, solving a difficult problem,
+or simply want to talk about technology — let's connect.
+</p>
+
+<br>
+
+<a href="https://github.com/Gaurav-giradkar">
+<img src="https://img.shields.io/badge/GITHUB-0D1117?style=for-the-badge&logo=github&logoColor=FFFFFF">
+</a>
+
+<a href="mailto:gauravgiradkar59@gmail.com">
+<img src="https://img.shields.io/badge/EMAIL-0D1117?style=for-the-badge&logo=gmail&logoColor=EA4335">
+</a>
+
+</div>
+
+<br>
+
+<div align="center">
+
+<pre>
+┌──────────────────────────────────────────────────────┐
+│                                                      │
+│              BUILD • SHIP • ITERATE                 │
+│                                                      │
+│                 KEEP BUILDING.                       │
+│                                                      │
+└──────────────────────────────────────────────────────┘
+</pre>
+
+</div>
+
+<br>
+
+<div align="center">
+
+<sub>
+Built with curiosity, code and a lot of iteration.
+</sub>
+
+</div>
+
+<br>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer&color=0:0B1020,50:111827,100:0B1020" width="100%">
