@@ -9,16 +9,14 @@
 <br><br>
 
 <a href="https://github.com/Gaurav-giradkar">
-<img src="https://img.shields.io/badge/GitHub-0B1020?style=for-the-badge&logo=github&logoColor=white">
+<img src="https://img.shields.io/badge/GitHub-0B1020?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
 </a>
 
 <a href="mailto:gauravgiradkar59@gmail.com">
-<img src="https://img.shields.io/badge/Email-0B1020?style=for-the-badge&logo=gmail&logoColor=EA4335">
+<img src="https://img.shields.io/badge/Email-0B1020?style=for-the-badge&logo=gmail&logoColor=EA4335" alt="Email">
 </a>
 
 </div>
-
----
 
 <hr>
 
@@ -26,6 +24,7 @@
 
 <table>
 <tr>
+
 <td width="65%" valign="top">
 
 <h3>Technology-focused builder & problem solver.</h3>
@@ -58,31 +57,33 @@ I'm still figuring out exactly what kind of builder I want to become, but the di
 
 <td width="35%" valign="top">
 
-<h3><code>CURRENT MODE</code></h3>
+<h3><code>IDENTITY</code></h3>
 
 <pre>
 ┌───────────────────────┐
 │                       │
-│  BUILDING             │
-│  ██████████████████   │
+│  ROLE                 │
+│  Technology Builder   │
 │                       │
-│  LEARNING             │
-│  █████████████████░   │
+│  FOCUS                │
+│  AI                   │
+│  Software             │
+│  Product              │
+│  Design               │
 │                       │
-│  EXPLORING            │
-│  ████████████████░░   │
-│                       │
-│  STATUS               │
-│  ● ACTIVE             │
+│  APPROACH             │
+│  Learn → Build        │
+│  Test → Improve       │
 │                       │
 └───────────────────────┘
 </pre>
 
 </td>
+
 </tr>
 </table>
 
-<br>
+<hr>
 
 <table>
 <tr>
@@ -146,8 +147,6 @@ An imperfect working product teaches more than a perfect idea that was never bui
 
 </tr>
 </table>
-
-<hr>
 
 <hr>
 
@@ -225,67 +224,77 @@ Creating interfaces that are intuitive, purposeful and enjoyable to use.
 
 <hr>
 
-<hr>
-
 <h2><code>&gt; tech.stack</code></h2>
 
 <table>
 <tr>
+
 <td width="20%"><b>LANGUAGES</b></td>
+
 <td>
-<img src="https://img.shields.io/badge/C%2B%2B-0D1117?style=flat-square&logo=cplusplus&logoColor=61DAFB">
-<img src="https://img.shields.io/badge/JavaScript-0D1117?style=flat-square&logo=javascript&logoColor=F7DF1E">
-<img src="https://img.shields.io/badge/TypeScript-0D1117?style=flat-square&logo=typescript&logoColor=3178C6">
-<img src="https://img.shields.io/badge/Python-0D1117?style=flat-square&logo=python&logoColor=3776AB">
-<img src="https://img.shields.io/badge/Java-0D1117?style=flat-square&logo=openjdk&logoColor=ED8B00">
+<img src="https://img.shields.io/badge/C%2B%2B-0D1117?style=flat-square&logo=cplusplus&logoColor=61DAFB" alt="C++">
+<img src="https://img.shields.io/badge/JavaScript-0D1117?style=flat-square&logo=javascript&logoColor=F7DF1E" alt="JavaScript">
+<img src="https://img.shields.io/badge/TypeScript-0D1117?style=flat-square&logo=typescript&logoColor=3178C6" alt="TypeScript">
+<img src="https://img.shields.io/badge/Python-0D1117?style=flat-square&logo=python&logoColor=3776AB" alt="Python">
+<img src="https://img.shields.io/badge/Java-0D1117?style=flat-square&logo=openjdk&logoColor=ED8B00" alt="Java">
 </td>
+
 </tr>
 
 <tr>
+
 <td><b>FRONTEND</b></td>
+
 <td>
-<img src="https://img.shields.io/badge/React-0D1117?style=flat-square&logo=react&logoColor=61DAFB">
-<img src="https://img.shields.io/badge/Next.js-0D1117?style=flat-square&logo=next.js&logoColor=FFFFFF">
-<img src="https://img.shields.io/badge/Tailwind-0D1117?style=flat-square&logo=tailwindcss&logoColor=06B6D4">
-<img src="https://img.shields.io/badge/HTML5-0D1117?style=flat-square&logo=html5&logoColor=E34F26">
-<img src="https://img.shields.io/badge/CSS3-0D1117?style=flat-square&logo=css3&logoColor=1572B6">
+<img src="https://img.shields.io/badge/React-0D1117?style=flat-square&logo=react&logoColor=61DAFB" alt="React">
+<img src="https://img.shields.io/badge/Next.js-0D1117?style=flat-square&logo=next.js&logoColor=FFFFFF" alt="Next.js">
+<img src="https://img.shields.io/badge/Tailwind-0D1117?style=flat-square&logo=tailwindcss&logoColor=06B6D4" alt="Tailwind CSS">
+<img src="https://img.shields.io/badge/HTML5-0D1117?style=flat-square&logo=html5&logoColor=E34F26" alt="HTML5">
+<img src="https://img.shields.io/badge/CSS3-0D1117?style=flat-square&logo=css3&logoColor=1572B6" alt="CSS3">
 </td>
+
 </tr>
 
 <tr>
+
 <td><b>BACKEND</b></td>
+
 <td>
-<img src="https://img.shields.io/badge/Node.js-0D1117?style=flat-square&logo=node.js&logoColor=339933">
-<img src="https://img.shields.io/badge/Express-0D1117?style=flat-square&logo=express&logoColor=FFFFFF">
-<img src="https://img.shields.io/badge/Flask-0D1117?style=flat-square&logo=flask&logoColor=FFFFFF">
-<img src="https://img.shields.io/badge/REST_API-0D1117?style=flat-square&logo=fastapi&logoColor=009688">
+<img src="https://img.shields.io/badge/Node.js-0D1117?style=flat-square&logo=node.js&logoColor=339933" alt="Node.js">
+<img src="https://img.shields.io/badge/Express-0D1117?style=flat-square&logo=express&logoColor=FFFFFF" alt="Express">
+<img src="https://img.shields.io/badge/Flask-0D1117?style=flat-square&logo=flask&logoColor=FFFFFF" alt="Flask">
 </td>
+
 </tr>
 
 <tr>
+
 <td><b>AI / DATA</b></td>
+
 <td>
-<img src="https://img.shields.io/badge/Google_Gemini-0D1117?style=flat-square&logo=googlegemini&logoColor=8E75B2">
-<img src="https://img.shields.io/badge/Embeddings-0D1117?style=flat-square&logo=openai&logoColor=FFFFFF">
-<img src="https://img.shields.io/badge/Firebase-0D1117?style=flat-square&logo=firebase&logoColor=FFCA28">
-<img src="https://img.shields.io/badge/MongoDB-0D1117?style=flat-square&logo=mongodb&logoColor=47A248">
-<img src="https://img.shields.io/badge/MySQL-0D1117?style=flat-square&logo=mysql&logoColor=4479A1">
+<img src="https://img.shields.io/badge/Google_Gemini-0D1117?style=flat-square&logo=googlegemini&logoColor=8E75B2" alt="Google Gemini">
+<img src="https://img.shields.io/badge/Embeddings-0D1117?style=flat-square&logoColor=FFFFFF" alt="Embeddings">
+<img src="https://img.shields.io/badge/Firebase-0D1117?style=flat-square&logo=firebase&logoColor=FFCA28" alt="Firebase">
+<img src="https://img.shields.io/badge/MongoDB-0D1117?style=flat-square&logo=mongodb&logoColor=47A248" alt="MongoDB">
+<img src="https://img.shields.io/badge/MySQL-0D1117?style=flat-square&logo=mysql&logoColor=4479A1" alt="MySQL">
 </td>
+
 </tr>
 
 <tr>
+
 <td><b>TOOLS</b></td>
+
 <td>
-<img src="https://img.shields.io/badge/Git-0D1117?style=flat-square&logo=git&logoColor=F05032">
-<img src="https://img.shields.io/badge/GitHub-0D1117?style=flat-square&logo=github&logoColor=FFFFFF">
-<img src="https://img.shields.io/badge/Figma-0D1117?style=flat-square&logo=figma&logoColor=F24E1E">
-<img src="https://img.shields.io/badge/Postman-0D1117?style=flat-square&logo=postman&logoColor=FF6C37">
-<img src="https://img.shields.io/badge/VS_Code-0D1117?style=flat-square&logo=visualstudiocode&logoColor=007ACC">
+<img src="https://img.shields.io/badge/Git-0D1117?style=flat-square&logo=git&logoColor=F05032" alt="Git">
+<img src="https://img.shields.io/badge/GitHub-0D1117?style=flat-square&logo=github&logoColor=FFFFFF" alt="GitHub">
+<img src="https://img.shields.io/badge/Figma-0D1117?style=flat-square&logo=figma&logoColor=F24E1E" alt="Figma">
+<img src="https://img.shields.io/badge/Postman-0D1117?style=flat-square&logo=postman&logoColor=FF6C37" alt="Postman">
+<img src="https://img.shields.io/badge/VS_Code-0D1117?style=flat-square&logo=visualstudiocode&logoColor=007ACC" alt="VS Code">
 </td>
+
 </tr>
 </table>
-
-<hr>
 
 <hr>
 
@@ -331,80 +340,14 @@ Creating interfaces that are intuitive, purposeful and enjoyable to use.
 <pre>
 ┌──────────────────────────────────────────────────────┐
 │                                                      │
-│                 IDEA → PRODUCT → SCALE               │
+│              IDEA → PRODUCT → SCALE                  │
 │                                                      │
-│       BUILDING TOWARDS SOMETHING BIGGER              │
+│          BUILDING TOWARDS SOMETHING BIGGER           │
 │                                                      │
 └──────────────────────────────────────────────────────┘
 </pre>
 
 </div>
-
-<hr>
-
-<hr>
-
-<h2><code>&gt; github.activity</code></h2>
-
-<table>
-<tr>
-
-<td width="50%" valign="top">
-
-<h3>GITHUB STATISTICS</h3>
-
-<img
-src="https://github-readme-stats.vercel.app/api?username=Gaurav-giradkar&show_icons=true&hide_border=true&bg_color=0D1117&title_color=22D3EE&icon_color=A78BFA&text_color=F0F6FC&rank_icon=github&include_all_commits=true"
-width="100%"
-alt="GitHub Statistics"
-/>
-
-</td>
-
-<td width="50%" valign="top">
-
-<h3>LANGUAGE DISTRIBUTION</h3>
-
-<img
-src="https://github-readme-stats.vercel.app/api/top-langs/?username=Gaurav-giradkar&layout=compact&hide_border=true&bg_color=0D1117&title_color=22D3EE&text_color=F0F6FC&langs_count=8"
-width="100%"
-alt="Most Used Languages"
-/>
-
-</td>
-
-</tr>
-</table>
-
-<br>
-
-<div align="center">
-
-<h3>CONTRIBUTION STREAK</h3>
-
-<img
-src="https://github-readme-streak-stats.herokuapp.com/?user=Gaurav-giradkar&hide_border=true&background=0D1117&ring=22D3EE&fire=A78BFA&currStreakLabel=22D3EE&sideLabels=F0F6FC&dates=8B949E"
-width="75%"
-alt="GitHub Streak"
-/>
-
-</div>
-
-<br>
-
-<div align="center">
-
-<h3>CONTRIBUTION ACTIVITY</h3>
-
-<img
-src="https://github-readme-activity-graph.vercel.app/graph?username=Gaurav-giradkar&bg_color=0D1117&color=22D3EE&line=A78BFA&point=F0F6FC&area=true&hide_border=true&custom_title=Gaurav's%20Contribution%20Activity"
-width="100%"
-alt="Contribution Activity"
-/>
-
-</div>
-
-<hr>
 
 <hr>
 
@@ -466,6 +409,66 @@ BUILD IT BETTER
 
 <hr>
 
+<h2><code>&gt; github.activity</code></h2>
+
+<table>
+<tr>
+
+<td width="50%" valign="top">
+
+<h3>GITHUB STATISTICS</h3>
+
+<img
+src="https://github-readme-stats.vercel.app/api?username=Gaurav-giradkar&show_icons=true&hide_border=true&bg_color=0D1117&title_color=22D3EE&icon_color=A78BFA&text_color=F0F6FC&rank_icon=github&include_all_commits=true"
+width="100%"
+alt="GitHub Statistics"
+>
+
+</td>
+
+<td width="50%" valign="top">
+
+<h3>LANGUAGE DISTRIBUTION</h3>
+
+<img
+src="https://github-readme-stats.vercel.app/api/top-langs/?username=Gaurav-giradkar&layout=compact&hide_border=true&bg_color=0D1117&title_color=22D3EE&text_color=F0F6FC&langs_count=8"
+width="100%"
+alt="Most Used Languages"
+>
+
+</td>
+
+</tr>
+</table>
+
+<br>
+
+<div align="center">
+
+<h3>CONTRIBUTION STREAK</h3>
+
+<img
+src="https://github-readme-streak-stats.herokuapp.com/?user=Gaurav-giradkar&hide_border=true&background=0D1117&ring=22D3EE&fire=A78BFA&currStreakLabel=22D3EE&sideLabels=F0F6FC&dates=8B949E"
+width="75%"
+alt="GitHub Contribution Streak"
+>
+
+</div>
+
+<br>
+
+<div align="center">
+
+<h3>CONTRIBUTION ACTIVITY</h3>
+
+<img
+src="https://github-readme-activity-graph.vercel.app/graph?username=Gaurav-giradkar&bg_color=0D1117&color=22D3EE&line=A78BFA&point=F0F6FC&area=true&hide_border=true&custom_title=Gaurav's%20Contribution%20Activity"
+width="100%"
+alt="GitHub Contribution Activity"
+>
+
+</div>
+
 <hr>
 
 <h2><code>&gt; contribution.activity</code></h2>
@@ -482,8 +485,6 @@ width="100%"
 
 <hr>
 
-<hr>
-
 <h2><code>&gt; connect</code></h2>
 
 <div align="center">
@@ -496,11 +497,11 @@ or simply want to talk about technology — let's connect.
 <br>
 
 <a href="https://github.com/Gaurav-giradkar">
-<img src="https://img.shields.io/badge/GITHUB-0D1117?style=for-the-badge&logo=github&logoColor=FFFFFF">
+<img src="https://img.shields.io/badge/GITHUB-0D1117?style=for-the-badge&logo=github&logoColor=FFFFFF" alt="GitHub">
 </a>
 
 <a href="mailto:gauravgiradkar59@gmail.com">
-<img src="https://img.shields.io/badge/EMAIL-0D1117?style=for-the-badge&logo=gmail&logoColor=EA4335">
+<img src="https://img.shields.io/badge/EMAIL-0D1117?style=for-the-badge&logo=gmail&logoColor=EA4335" alt="Email">
 </a>
 
 </div>
