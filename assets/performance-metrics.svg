@@ -1,12 +1,12 @@
 <svg
 xmlns="http://www.w3.org/2000/svg"
 width="900"
-height="430"
-viewBox="0 0 900 430">
+height="500"
+viewBox="0 0 900 500">
 
 <rect
   width="900"
-  height="430"
+  height="500"
   rx="14"
   fill="#111827"/>
 
@@ -14,7 +14,7 @@ viewBox="0 0 900 430">
   x="1"
   y="1"
   width="898"
-  height="428"
+  height="498"
   rx="13"
   fill="none"
   stroke="#273244"/>
@@ -60,7 +60,7 @@ viewBox="0 0 900 430">
   font-family="monospace"
   font-size="15"
   font-weight="700">
-  146
+  147
 </text>
 
 <text x="32" y="168"
@@ -149,7 +149,7 @@ viewBox="0 0 900 430">
   font-family="monospace"
   font-size="40"
   font-weight="700">
-  204
+  205
 </text>
 
 <text
@@ -172,7 +172,7 @@ viewBox="0 0 900 430">
 <rect
   x="325"
   y="215"
-  width="115.60000000000001"
+  width="116.16666666666667"
   height="10"
   rx="5"
   fill="#22C55E"/>
