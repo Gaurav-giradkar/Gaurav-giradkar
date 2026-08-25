@@ -146,7 +146,7 @@ jobs:
           # -----------------------------
 
           width = 900
-          height = 430
+          height = 500
 
           bg = "#111827"
           border = "#273244"
@@ -167,7 +167,7 @@ jobs:
 
           <rect
             width="900"
-            height="430"
+            height="500"
             rx="14"
             fill="{bg}"/>
 
@@ -175,7 +175,7 @@ jobs:
             x="1"
             y="1"
             width="898"
-            height="428"
+            height="498"
             rx="13"
             fill="none"
             stroke="{border}"/>
