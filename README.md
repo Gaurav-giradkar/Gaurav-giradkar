@@ -309,9 +309,7 @@ BUILD IT BETTER
 
 <hr>
 
-<h2><code>&gt; github.activity</code></h2>
-
-<h3>GITHUB STATISTICS</h3>
+<h2>📊 Performance Metrics</h2>
 
 <p align="center">
   <img
@@ -321,8 +319,6 @@ BUILD IT BETTER
   />
 </p>
 
-<h3>MOST USED LANGUAGES</h3>
-
 <p align="center">
   <img
     src="./profile-summary-card-output/github_dark/1-repos-per-language.svg"
@@ -331,30 +327,17 @@ BUILD IT BETTER
   />
 </p>
 
-<h3>CONTRIBUTION STREAK</h3>
-
-<p align="center">
-  <img
-    src="https://github-readme-streak-stats.herokuapp.com/?user=Gaurav-giradkar&theme=github-dark&hide_border=true"
-    width="100%"
-    alt="GitHub Contribution Streak"
-  />
-</p>
-
-
-
 <hr>
 
-<h2><code>&gt; contribution.activity</code></h2>
+<h2>🐍 Contribution Snake</h2>
 
 <p align="center">
   <img
-    src="https://raw.githubusercontent.com/Gaurav-giradkar/Gaurav-giradkar/output/github-snake-dark.svg"
+    src="./output/github-snake-dark.svg"
     width="100%"
     alt="GitHub Contribution Snake"
   />
 </p>
-
 
 <hr>
 
