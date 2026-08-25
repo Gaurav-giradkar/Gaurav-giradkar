@@ -1,109 +1,239 @@
-from pathlib import Path
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320">
 
-svg = r'''<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360">
-  <defs>
-    <linearGradient id="title" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#22D3EE"/>
-      <stop offset="1" stop-color="#8B5CF6"/>
-    </linearGradient>
-    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#22D3EE"/>
-      <stop offset="1" stop-color="#8B5CF6"/>
-    </linearGradient>
-    <radialGradient id="glow">
-      <stop offset="0" stop-color="#22D3EE" stop-opacity=".22"/>
-      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
-    </radialGradient>
-    <filter id="softGlow">
-      <feGaussianBlur stdDeviation="4" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <clipPath id="globeClip">
-      <circle cx="970" cy="180" r="128"/>
-    </clipPath>
-  </defs>
+  <rect width="1200" height="320" fill="#0d1117"/>
 
-  <rect width="1200" height="360" fill="#080B12"/>
-  <rect x="18" y="18" width="1164" height="324" rx="14" fill="none" stroke="#202A3A"/>
-  <circle cx="970" cy="180" r="170" fill="url(#glow)"/>
+  <rect
+    x="1"
+    y="1"
+    width="1198"
+    height="318"
+    rx="14"
+    fill="none"
+    stroke="#30363d"
+  />
 
-  <!-- subtle grid -->
-  <g opacity=".18" stroke="#263246">
-    <path d="M60 70H1140M60 110H1140M60 150H1140M60 190H1140M60 230H1140M60 270H1140M60 310H1140"/>
-    <path d="M120 45V315M220 45V315M320 45V315M420 45V315M520 45V315M620 45V315M720 45V315M820 45V315M920 45V315M1020 45V315M1120 45V315"/>
+  <!-- Grid -->
+  <g stroke="#161b22" stroke-width="1">
+    <path d="M60 55H1140"/>
+    <path d="M60 95H1140"/>
+    <path d="M60 135H1140"/>
+    <path d="M60 175H1140"/>
+    <path d="M60 215H1140"/>
+    <path d="M60 255H1140"/>
+    <path d="M60 295H1140"/>
+
+    <path d="M120 35V285"/>
+    <path d="M220 35V285"/>
+    <path d="M320 35V285"/>
+    <path d="M420 35V285"/>
+    <path d="M520 35V285"/>
+    <path d="M620 35V285"/>
+    <path d="M720 35V285"/>
+    <path d="M820 35V285"/>
+    <path d="M920 35V285"/>
+    <path d="M1020 35V285"/>
+    <path d="M1120 35V285"/>
   </g>
 
-  <!-- terminal prompt -->
-  <text x="72" y="67" fill="#22D3EE" font-family="monospace" font-size="14">gaurav@github:~$</text>
-  <rect x="215" y="55" width="9" height="15" rx="1" fill="#D9F9FF" opacity=".9"/>
+  <!-- Terminal -->
+  <text
+    x="68"
+    y="62"
+    fill="#39d353"
+    font-family="monospace"
+    font-size="14">
+    gaurav@github:~$
+  </text>
 
-  <!-- title -->
-  <text x="68" y="135" fill="#F8FAFC" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="800" letter-spacing="2">GAURAV</text>
-  <text x="68" y="190" fill="url(#title)" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="800" letter-spacing="2">GIRADKAR</text>
+  <text
+    x="220"
+    y="62"
+    fill="#8b949e"
+    font-family="monospace"
+    font-size="14">
+    whoami
+  </text>
 
-  <text x="72" y="222" fill="#AAB4C4" font-family="monospace" font-size="17" letter-spacing="4">&lt; TECHNOLOGY BUILDER /&gt;</text>
+  <!-- Name -->
+  <text
+    x="68"
+    y="128"
+    fill="#f0f6fc"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="52"
+    font-weight="700"
+    letter-spacing="2">
+    GAURAV GIRADKAR
+  </text>
 
-  <!-- focus row -->
-  <g font-family="monospace" font-size="13">
-    <text x="72" y="264" fill="#22D3EE">AI</text>
-    <text x="125" y="264" fill="#64748B">×</text>
-    <text x="150" y="264" fill="#A78BFA">SOFTWARE</text>
-    <text x="300" y="264" fill="#64748B">×</text>
-    <text x="325" y="264" fill="#22D3EE">PRODUCT</text>
-    <text x="455" y="264" fill="#64748B">×</text>
-    <text x="480" y="264" fill="#A78BFA">DESIGN</text>
+  <!-- Role -->
+  <text
+    x="72"
+    y="164"
+    fill="#22d3ee"
+    font-family="monospace"
+    font-size="17"
+    letter-spacing="3">
+    &lt; TECHNOLOGY BUILDER /&gt;
+  </text>
+
+  <!-- Focus -->
+  <text
+    x="72"
+    y="210"
+    fill="#8b949e"
+    font-family="monospace"
+    font-size="14">
+    FOCUS
+  </text>
+
+  <text
+    x="145"
+    y="210"
+    fill="#22d3ee"
+    font-family="monospace"
+    font-size="14">
+    AI
+  </text>
+
+  <text
+    x="180"
+    y="210"
+    fill="#484f58"
+    font-family="monospace"
+    font-size="14">
+    ×
+  </text>
+
+  <text
+    x="210"
+    y="210"
+    fill="#a78bfa"
+    font-family="monospace"
+    font-size="14">
+    SOFTWARE
+  </text>
+
+  <text
+    x="330"
+    y="210"
+    fill="#484f58"
+    font-family="monospace"
+    font-size="14">
+    ×
+  </text>
+
+  <text
+    x="360"
+    y="210"
+    fill="#22d3ee"
+    font-family="monospace"
+    font-size="14">
+    PRODUCT
+  </text>
+
+  <text
+    x="465"
+    y="210"
+    fill="#484f58"
+    font-family="monospace"
+    font-size="14">
+    ×
+  </text>
+
+  <text
+    x="495"
+    y="210"
+    fill="#a78bfa"
+    font-family="monospace"
+    font-size="14">
+    DESIGN
+  </text>
+
+  <!-- Philosophy -->
+  <text
+    x="72"
+    y="252"
+    fill="#c9d1d9"
+    font-family="monospace"
+    font-size="14">
+    &gt; build. ship. iterate.
+  </text>
+
+  <!-- Right circuit -->
+  <g
+    fill="none"
+    stroke="#30363d"
+    stroke-width="2">
+
+    <path d="M760 85H830L865 120H930"/>
+    <path d="M805 245H870L905 210H970"/>
+    <path d="M1010 85H1100V125"/>
+    <path d="M1010 245H1100V205"/>
+
   </g>
 
-  <rect x="72" y="285" width="500" height="2" fill="url(#line)" opacity=".8"/>
-  <text x="72" y="315" fill="#7DD3FC" font-family="monospace" font-size="14">&gt; build. ship. iterate. repeat.</text>
-  <rect x="334" y="303" width="8" height="15" fill="#CFFAFE" opacity=".85"/>
-
-  <!-- right-side circuit -->
-  <g fill="none" stroke="url(#line)" stroke-width="1.5" opacity=".8">
-    <path d="M700 100H790L830 140H890"/>
-    <path d="M740 250H820L855 215H930"/>
-    <path d="M1050 95H1120V135"/>
-    <path d="M1040 270H1115V235"/>
-  </g>
-  <g fill="#22D3EE">
-    <circle cx="700" cy="100" r="3"/>
-    <circle cx="890" cy="140" r="3"/>
-    <circle cx="740" cy="250" r="3"/>
-    <circle cx="930" cy="215" r="3"/>
+  <g fill="#22d3ee">
+    <circle cx="760" cy="85" r="4"/>
+    <circle cx="930" cy="120" r="4"/>
+    <circle cx="805" cy="245" r="4"/>
+    <circle cx="970" cy="210" r="4"/>
   </g>
 
-  <!-- dotted globe -->
-  <g clip-path="url(#globeClip)" fill="#22D3EE">
-    <circle cx="970" cy="180" r="128" fill="none" stroke="#22D3EE" stroke-opacity=".35" stroke-width="2"/>
-    <g opacity=".8">
-      <circle cx="870" cy="112" r="2"/><circle cx="885" cy="96" r="2"/><circle cx="905" cy="82" r="2"/>
-      <circle cx="930" cy="72" r="2"/><circle cx="960" cy="66" r="2"/><circle cx="990" cy="70" r="2"/>
-      <circle cx="1020" cy="80" r="2"/><circle cx="1045" cy="95" r="2"/><circle cx="1065" cy="115" r="2"/>
-      <circle cx="880" cy="145" r="2"/><circle cx="905" cy="135" r="2"/><circle cx="930" cy="128" r="2"/>
-      <circle cx="955" cy="125" r="2"/><circle cx="980" cy="128" r="2"/><circle cx="1005" cy="135" r="2"/>
-      <circle cx="1030" cy="145" r="2"/><circle cx="1055" cy="158" r="2"/>
-      <circle cx="875" cy="180" r="2"/><circle cx="900" cy="178" r="2"/><circle cx="925" cy="175" r="2"/>
-      <circle cx="950" cy="173" r="2"/><circle cx="975" cy="175" r="2"/><circle cx="1000" cy="180" r="2"/>
-      <circle cx="1025" cy="185" r="2"/><circle cx="1050" cy="190" r="2"/>
-      <circle cx="885" cy="215" r="2"/><circle cx="910" cy="220" r="2"/><circle cx="935" cy="225" r="2"/>
-      <circle cx="960" cy="230" r="2"/><circle cx="985" cy="228" r="2"/><circle cx="1010" cy="220" r="2"/>
-      <circle cx="1035" cy="210" r="2"/><circle cx="1060" cy="198" r="2"/>
-      <circle cx="910" cy="250" r="2"/><circle cx="935" cy="262" r="2"/><circle cx="960" cy="268" r="2"/>
-      <circle cx="985" cy="265" r="2"/><circle cx="1010" cy="255" r="2"/><circle cx="1035" cy="240" r="2"/>
-    </g>
-    <path d="M845 180 Q970 80 1095 180 Q970 280 845 180" fill="none" stroke="#8B5CF6" stroke-opacity=".5"/>
-    <path d="M970 52 Q900 180 970 308 Q1040 180 970 52" fill="none" stroke="#22D3EE" stroke-opacity=".5"/>
+  <g fill="#a78bfa">
+    <circle cx="1010" cy="85" r="4"/>
+    <circle cx="1100" cy="125" r="4"/>
+    <circle cx="1010" cy="245" r="4"/>
+    <circle cx="1100" cy="205" r="4"/>
   </g>
 
-  <!-- code symbol -->
-  <text x="1080" y="195" fill="#22D3EE" font-family="monospace" font-size="34" font-weight="700">&lt;/&gt;</text>
+  <!-- Code symbol -->
+  <text
+    x="855"
+    y="185"
+    fill="#22d3ee"
+    font-family="monospace"
+    font-size="42"
+    font-weight="700">
+    &lt;/&gt;
+  </text>
 
-  <!-- corner accents -->
-  <path d="M32 52V32H55M1145 32H1168V55M32 305V328H55M1145 328H1168V305"
-        fill="none" stroke="url(#line)" stroke-width="2"/>
+  <text
+    x="910"
+    y="220"
+    fill="#8b949e"
+    font-family="monospace"
+    font-size="12">
+    BUILD / SHIP / REPEAT
+  </text>
+
+  <!-- Bottom accent -->
+  <rect
+    x="68"
+    y="285"
+    width="500"
+    height="2"
+    fill="#22d3ee"/>
+
+  <rect
+    x="568"
+    y="285"
+    width="180"
+    height="2"
+    fill="#8b5cf6"/>
+
+  <rect
+    x="748"
+    y="285"
+    width="360"
+    height="2"
+    fill="#30363d"/>
+
+  <!-- Corner accents -->
+  <path
+    d="M28 52V28H52M1148 28H1172V52M28 268V292H52M1148 292H1172V268"
+    fill="none"
+    stroke="#22d3ee"
+    stroke-width="2"/>
+
 </svg>
-'''
-
-path = Path("/mnt/data/header.svg")
-path.write_text(svg, encoding="utf-8")
-print(f"Created: {path}")
