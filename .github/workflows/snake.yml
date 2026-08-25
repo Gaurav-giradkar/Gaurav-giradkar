@@ -10,16 +10,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Generate contribution snake
+      - name: Generate snake
         uses: Platane/snk@v3
         with:
           github_user_name: Gaurav-giradkar
           outputs: |
             output/github-contribution-grid-snake.svg
-            output/github-contribution-grid-snake-dark.svg?palette=github-dark
 
-      - name: Push generated files
+      - name: Commit snake
         uses: EndBug/add-and-commit@v9
         with:
-          message: "chore: update contribution snake"
+          message: "Update contribution snake"
           add: "output/"
