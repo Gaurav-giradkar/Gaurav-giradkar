@@ -1,9 +1,9 @@
 name: Generate Contribution Snake
 
 on:
+  workflow_dispatch:
   schedule:
     - cron: "0 0 * * *"
-  workflow_dispatch:
 
 jobs:
   generate:
@@ -14,11 +14,10 @@ jobs:
         uses: Platane/snk@v3
         with:
           github_user_name: Gaurav-giradkar
-          outputs: |
-            output/github-contribution-grid-snake.svg
+          outputs: output/github-contribution-grid-snake.svg
 
-      - name: Commit snake
+      - name: Commit generated snake
         uses: EndBug/add-and-commit@v9
         with:
           message: "Update contribution snake"
-          add: "output/"
+          add: "output/github-contribution-grid-snake.svg"
