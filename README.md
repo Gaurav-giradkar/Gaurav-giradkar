@@ -86,20 +86,38 @@ If you're building something interesting, solving a difficult problem, or simply
 
 <br><br>
 
-**GITHUB** • **EMAIL**
+<a href="https://github.com/Gaurav-giradkar">
+  <img src="https://img.shields.io/badge/GITHUB-111827?style=for-the-badge&logo=github&logoColor=white" />
+</a>
+
+&nbsp;
+
+<a href="https://www.instagram.com/gaurav_13gkg/">
+  <img src="https://img.shields.io/badge/INSTAGRAM-111827?style=for-the-badge&logo=instagram&logoColor=white" />
+</a>
+
+&nbsp;
+
+<a href="https://www.linkedin.com/in/gaurav-giradkar-018702406/">
+  <img src="https://img.shields.io/badge/LINKEDIN-111827?style=for-the-badge&logo=linkedin&logoColor=white" />
+</a>
+
+&nbsp;
+
+<a href="mailto:gauravgiradkar59@gmail.com">
+  <img src="https://img.shields.io/badge/EMAIL-111827?style=for-the-badge&logo=gmail&logoColor=white" />
+</a>
+
+<br><br>
+
+<sub>Build. Ship. Iterate.</sub>
+
+<br>
+
+<sub>Built with curiosity, code, and a lot of iteration.</sub>
 
 </div>
 
 </details>
 
 ---
-
-<div align="center">
-
-<p>
-  <img src="./assets/footer.svg" width="100%" alt="Build Ship Iterate" />
-</p>
-
-<sub>Built with curiosity, code, and a lot of iteration.</sub>
-
-</div>
