@@ -104,11 +104,11 @@ If you're building something interesting, solving a difficult problem, or simply
 
 <br><br>
 
-<sub>Build. Ship. Iterate.</sub>
+<p><strong>Build. Ship. Iterate.</strong></p>
 
 <br>
 
-<sub>Built with curiosity, code, and a lot of iteration.</sub>
+<p>Built with curiosity, code, and a lot of iteration.</p>
 
 </div>
 
