@@ -16,45 +16,46 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Generate live performance metrics
+      - name: Generate live metrics
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_USERNAME: Gaurav-giradkar
+          USERNAME: Gaurav-giradkar
         run: |
           python3 <<'PY'
           import os
           import json
           import urllib.request
-          import html
           from collections import Counter
 
+          USERNAME = os.environ["USERNAME"]
           TOKEN = os.environ["GITHUB_TOKEN"]
-          USERNAME = os.environ["GITHUB_USERNAME"]
 
-          headers = {
+          HEADERS = {
               "Authorization": f"Bearer {TOKEN}",
               "Accept": "application/vnd.github+json",
-              "User-Agent": "github-performance-metrics"
+              "User-Agent": "performance-metrics"
           }
 
-          def request(url):
-              req = urllib.request.Request(url, headers=headers)
+          def api(url):
+              req = urllib.request.Request(url, headers=HEADERS)
               with urllib.request.urlopen(req) as response:
                   return json.loads(response.read())
 
           # -----------------------------
-          # USER / REPOSITORIES
+          # USER
           # -----------------------------
 
-          user = request(
-              f"https://api.github.com/users/{USERNAME}"
-          )
+          user = api(f"https://api.github.com/users/{USERNAME}")
+
+          # -----------------------------
+          # REPOSITORIES
+          # -----------------------------
 
           repos = []
           page = 1
 
           while True:
-              data = request(
+              data = api(
                   f"https://api.github.com/users/{USERNAME}/repos"
                   f"?per_page=100&page={page}&type=owner"
               )
@@ -69,7 +70,7 @@ jobs:
 
               page += 1
 
-          repositories = len(repos)
+          repository_count = len(repos)
 
           stars = sum(
               repo.get("stargazers_count", 0)
@@ -77,21 +78,33 @@ jobs:
           )
 
           # -----------------------------
-          # LANGUAGES
+          # REAL LANGUAGE BYTES
           # -----------------------------
 
-          languages = Counter()
+          language_bytes = Counter()
 
           for repo in repos:
-              language = repo.get("language")
+              owner = repo["owner"]["login"]
+              name = repo["name"]
 
-              if language:
-                  languages[language] += 1
+              try:
+                  data = api(
+                      f"https://api.github.com/repos/"
+                      f"{owner}/{name}/languages"
+                  )
 
-          top_languages = languages.most_common(5)
+                  for language, amount in data.items():
+                      language_bytes[language] += amount
+
+              except Exception:
+                  pass
+
+          total_bytes = sum(language_bytes.values()) or 1
+
+          top_languages = language_bytes.most_common(6)
 
           # -----------------------------
-          # GITHUB GRAPHQL
+          # CONTRIBUTIONS
           # -----------------------------
 
           query = """
@@ -115,25 +128,25 @@ jobs:
               }
           }).encode()
 
-          req = urllib.request.Request(
+          request = urllib.request.Request(
               "https://api.github.com/graphql",
               data=payload,
               headers={
-                  **headers,
+                  **HEADERS,
                   "Content-Type": "application/json"
               }
           )
 
-          with urllib.request.urlopen(req) as response:
-              graphql = json.loads(response.read())
+          with urllib.request.urlopen(request) as response:
+              result = json.loads(response.read())
 
-          contributions = graphql["data"]["user"]["contributionsCollection"]
+          contributions = result["data"]["user"]["contributionsCollection"]
 
           commits = contributions["totalCommitContributions"]
           pull_requests = contributions["totalPullRequestContributions"]
           issues = contributions["totalIssueContributions"]
 
-          contribution_total = (
+          total_contributions = (
               commits
               + pull_requests
               + issues
@@ -146,7 +159,7 @@ jobs:
           # -----------------------------
 
           width = 900
-          height = 500
+          height = 520
 
           bg = "#111827"
           border = "#273244"
@@ -154,10 +167,6 @@ jobs:
           muted = "#9CA3AF"
           cyan = "#22D3EE"
           green = "#22C55E"
-          purple = "#8B5CF6"
-
-          def esc(value):
-              return html.escape(str(value))
 
           svg = f'''<svg
           xmlns="http://www.w3.org/2000/svg"
@@ -167,7 +176,7 @@ jobs:
 
           <rect
             width="900"
-            height="500"
+            height="520"
             rx="14"
             fill="{bg}"/>
 
@@ -175,7 +184,7 @@ jobs:
             x="1"
             y="1"
             width="898"
-            height="498"
+            height="518"
             rx="13"
             fill="none"
             stroke="{border}"/>
@@ -197,7 +206,7 @@ jobs:
             y2="62"
             stroke="{border}"/>
 
-          <!-- GitHub Activity -->
+          <!-- GITHUB ACTIVITY -->
 
           <text
             x="32"
@@ -236,7 +245,7 @@ jobs:
             font-family="monospace"
             font-size="15"
             font-weight="700">
-            {repositories}
+            {repository_count}
           </text>
 
           <text x="32" y="201"
@@ -284,7 +293,7 @@ jobs:
             {stars}
           </text>
 
-          <!-- Contributions -->
+          <!-- CONTRIBUTIONS -->
 
           <line
             x1="290"
@@ -310,7 +319,7 @@ jobs:
             font-family="monospace"
             font-size="40"
             font-weight="700">
-            {contribution_total}
+            {total_contributions}
           </text>
 
           <text
@@ -319,35 +328,10 @@ jobs:
             fill="{muted}"
             font-family="monospace"
             font-size="11">
-            CONTRIBUTIONS THIS YEAR
+            THIS YEAR
           </text>
 
-          <rect
-            x="325"
-            y="215"
-            width="170"
-            height="10"
-            rx="5"
-            fill="#1F2937"/>
-
-          <rect
-            x="325"
-            y="215"
-            width="{min(170, max(8, contribution_total / 300 * 170))}"
-            height="10"
-            rx="5"
-            fill="{green}"/>
-
-          <text
-            x="325"
-            y="255"
-            fill="{muted}"
-            font-family="monospace"
-            font-size="11">
-            ACTIVE BUILDER
-          </text>
-
-          <!-- Focus -->
+          <!-- CURRENT FOCUS -->
 
           <line
             x1="540"
@@ -394,7 +378,7 @@ jobs:
             04  DESIGN
           </text>
 
-          <!-- Languages -->
+          <!-- LANGUAGES -->
 
           <line
             x1="32"
@@ -414,46 +398,15 @@ jobs:
           </text>
           '''
 
-          # Language bar
-
-          total_languages = sum(v for _, v in top_languages) or 1
-
-          colors = [
-              "#3B82F6",
-              "#F59E0B",
-              "#8B5CF6",
-              "#22C55E",
-              "#06B6D4"
-          ]
-
-          x = 32
-          bar_width = 836
-
-          for i, (language, count) in enumerate(top_languages):
-              segment = bar_width * count / total_languages
-
-              svg += f'''
-              <rect
-                x="{x}"
-                y="355"
-                width="{segment}"
-                height="12"
-                fill="{colors[i]}"
-              />
-              '''
-
-              x += segment
-
-          # Language labels with percentages
-
-          total_language_count = sum(
-              count for _, count in top_languages
-          ) or 1
+          # Stack languages vertically
 
           y = 370
 
-          for language, count in top_languages:
-              percentage = (count / total_language_count) * 100
+          for language, amount in top_languages:
+
+              percentage = (amount / total_bytes) * 100
+
+              bar_width = max(3, 500 * percentage / 100)
 
               svg += f'''
               <text
@@ -462,23 +415,41 @@ jobs:
                 fill="{muted}"
                 font-family="monospace"
                 font-size="12">
-                {esc(language).upper()}
+                {language.upper()}
               </text>
 
+              <rect
+                x="180"
+                y="{y - 10}"
+                width="500"
+                height="8"
+                rx="4"
+                fill="#1F2937"/>
+
+              <rect
+                x="180"
+                y="{y - 10}"
+                width="{bar_width}"
+                height="8"
+                rx="4"
+                fill="{green}"/>
+
               <text
-                x="220"
+                x="710"
                 y="{y}"
                 fill="{text}"
                 font-family="monospace"
                 font-size="12"
                 font-weight="700">
                 {percentage:.2f}%
-              </text>
               '''
+              svg += "</text>"
 
-              y += 20
+              y += 25
 
-          svg += "</svg>"
+          svg += '''
+          </svg>
+          '''
 
           os.makedirs("assets", exist_ok=True)
 
@@ -489,7 +460,7 @@ jobs:
           ) as file:
               file.write(svg)
 
-          print("Performance metrics generated successfully.")
+          print("Live performance metrics generated.")
           PY
 
       - name: Commit updated metrics
