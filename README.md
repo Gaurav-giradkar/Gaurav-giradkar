@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/header.svg" width="100%" alt="Gaurav Giradkar" />
+<img src="./assets/header.png" width="100%" alt="Gaurav Giradkar" />
 
 </div>
 
