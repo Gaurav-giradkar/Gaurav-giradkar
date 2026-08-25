@@ -313,13 +313,33 @@ BUILD IT BETTER
 
 <h3>GITHUB STATISTICS</h3>
 
-
+<p align="center">
+  <img
+    src="./profile-summary-card-output/github_dark/3-stats.svg"
+    width="100%"
+    alt="GitHub Statistics"
+  />
+</p>
 
 <h3>MOST USED LANGUAGES</h3>
 
-
+<p align="center">
+  <img
+    src="./profile-summary-card-output/github_dark/1-repos-per-language.svg"
+    width="100%"
+    alt="Most Used Languages"
+  />
+</p>
 
 <h3>CONTRIBUTION STREAK</h3>
+
+<p align="center">
+  <img
+    src="https://github-readme-streak-stats.herokuapp.com/?user=Gaurav-giradkar&theme=github-dark&hide_border=true"
+    width="100%"
+    alt="GitHub Contribution Streak"
+  />
+</p>
 
 
 
