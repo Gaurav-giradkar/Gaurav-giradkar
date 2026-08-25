@@ -327,6 +327,11 @@ BUILD IT BETTER
 
 <h2><code>&gt; contribution.activity</code></h2>
 
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/Gaurav-giradkar/Gaurav-giradkar/main/output/github-contribution-grid-snake.svg" width="100%" alt="GitHub Contribution Snake">
+
+</div>
 
 
 <hr>
