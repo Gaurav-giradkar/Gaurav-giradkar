@@ -60,7 +60,7 @@ viewBox="0 0 900 520">
   font-family="monospace"
   font-size="15"
   font-weight="700">
-  171
+  172
 </text>
 
 <text x="32" y="168"
@@ -75,7 +75,7 @@ viewBox="0 0 900 520">
   font-family="monospace"
   font-size="15"
   font-weight="700">
-  7
+  8
 </text>
 
 <text x="32" y="201"
@@ -149,7 +149,7 @@ viewBox="0 0 900 520">
   font-family="monospace"
   font-size="40"
   font-weight="700">
-  231
+  233
 </text>
 
 <text
@@ -247,7 +247,7 @@ viewBox="0 0 900 520">
     <rect
       x="180"
       y="360"
-      width="236.33812225634617"
+      width="236.16962950395256"
       height="8"
       rx="4"
       fill="#22C55E"/>
@@ -259,7 +259,7 @@ viewBox="0 0 900 520">
       font-family="monospace"
       font-size="12"
       font-weight="700">
-      47.27%
+      47.23%
     </text>
     <text
       x="32"
@@ -281,7 +281,7 @@ viewBox="0 0 900 520">
     <rect
       x="180"
       y="385"
-      width="122.44030803059485"
+      width="122.0583707222662"
       height="8"
       rx="4"
       fill="#22C55E"/>
@@ -293,7 +293,7 @@ viewBox="0 0 900 520">
       font-family="monospace"
       font-size="12"
       font-weight="700">
-      24.49%
+      24.41%
     </text>
     <text
       x="32"
@@ -315,7 +315,7 @@ viewBox="0 0 900 520">
     <rect
       x="180"
       y="410"
-      width="69.76471813023788"
+      width="69.5414514446581"
       height="8"
       rx="4"
       fill="#22C55E"/>
@@ -327,7 +327,7 @@ viewBox="0 0 900 520">
       font-family="monospace"
       font-size="12"
       font-weight="700">
-      13.95%
+      13.91%
     </text>
     <text
       x="32"
@@ -349,7 +349,7 @@ viewBox="0 0 900 520">
     <rect
       x="180"
       y="435"
-      width="50.512017262837105"
+      width="50.30657353994647"
       height="8"
       rx="4"
       fill="#22C55E"/>
@@ -361,7 +361,7 @@ viewBox="0 0 900 520">
       font-family="monospace"
       font-size="12"
       font-weight="700">
-      10.10%
+      10.06%
     </text>
     <text
       x="32"
@@ -383,7 +383,7 @@ viewBox="0 0 900 520">
     <rect
       x="180"
       y="460"
-      width="13.541799758030045"
+      width="14.480356671568073"
       height="8"
       rx="4"
       fill="#22C55E"/>
@@ -395,7 +395,7 @@ viewBox="0 0 900 520">
       font-family="monospace"
       font-size="12"
       font-weight="700">
-      2.71%
+      2.90%
     </text>
     <text
       x="32"
@@ -417,7 +417,7 @@ viewBox="0 0 900 520">
     <rect
       x="180"
       y="485"
-      width="7.054828120884028"
+      width="7.096827910367102"
       height="8"
       rx="4"
       fill="#22C55E"/>
@@ -429,6 +429,6 @@ viewBox="0 0 900 520">
       font-family="monospace"
       font-size="12"
       font-weight="700">
-      1.41%
+      1.42%
     </text>
 </svg>
