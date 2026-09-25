@@ -60,7 +60,7 @@ viewBox="0 0 900 520">
   font-family="monospace"
   font-size="15"
   font-weight="700">
-  172
+  174
 </text>
 
 <text x="32" y="168"
@@ -149,7 +149,7 @@ viewBox="0 0 900 520">
   font-family="monospace"
   font-size="40"
   font-weight="700">
-  233
+  235
 </text>
 
 <text
@@ -247,7 +247,7 @@ viewBox="0 0 900 520">
     <rect
       x="180"
       y="360"
-      width="236.16962950395256"
+      width="205.963760707259"
       height="8"
       rx="4"
       fill="#22C55E"/>
@@ -259,7 +259,7 @@ viewBox="0 0 900 520">
       font-family="monospace"
       font-size="12"
       font-weight="700">
-      47.23%
+      41.19%
     </text>
     <text
       x="32"
@@ -281,7 +281,7 @@ viewBox="0 0 900 520">
     <rect
       x="180"
       y="385"
-      width="122.0583707222662"
+      width="106.70418324126021"
       height="8"
       rx="4"
       fill="#22C55E"/>
@@ -293,7 +293,7 @@ viewBox="0 0 900 520">
       font-family="monospace"
       font-size="12"
       font-weight="700">
-      24.41%
+      21.34%
     </text>
     <text
       x="32"
@@ -315,7 +315,7 @@ viewBox="0 0 900 520">
     <rect
       x="180"
       y="410"
-      width="69.5414514446581"
+      width="71.44982945709793"
       height="8"
       rx="4"
       fill="#22C55E"/>
@@ -327,79 +327,11 @@ viewBox="0 0 900 520">
       font-family="monospace"
       font-size="12"
       font-weight="700">
-      13.91%
+      14.29%
     </text>
     <text
       x="32"
       y="445"
-      fill="#9CA3AF"
-      font-family="monospace"
-      font-size="12">
-      KOTLIN
-    </text>
-
-    <rect
-      x="180"
-      y="435"
-      width="500"
-      height="8"
-      rx="4"
-      fill="#1F2937"/>
-
-    <rect
-      x="180"
-      y="435"
-      width="50.30657353994647"
-      height="8"
-      rx="4"
-      fill="#22C55E"/>
-
-    <text
-      x="710"
-      y="445"
-      fill="#F9FAFB"
-      font-family="monospace"
-      font-size="12"
-      font-weight="700">
-      10.06%
-    </text>
-    <text
-      x="32"
-      y="470"
-      fill="#9CA3AF"
-      font-family="monospace"
-      font-size="12">
-      CSS
-    </text>
-
-    <rect
-      x="180"
-      y="460"
-      width="500"
-      height="8"
-      rx="4"
-      fill="#1F2937"/>
-
-    <rect
-      x="180"
-      y="460"
-      width="14.480356671568073"
-      height="8"
-      rx="4"
-      fill="#22C55E"/>
-
-    <text
-      x="710"
-      y="470"
-      fill="#F9FAFB"
-      font-family="monospace"
-      font-size="12"
-      font-weight="700">
-      2.90%
-    </text>
-    <text
-      x="32"
-      y="495"
       fill="#9CA3AF"
       font-family="monospace"
       font-size="12">
@@ -408,6 +340,74 @@ viewBox="0 0 900 520">
 
     <rect
       x="180"
+      y="435"
+      width="500"
+      height="8"
+      rx="4"
+      fill="#1F2937"/>
+
+    <rect
+      x="180"
+      y="435"
+      width="59.75720189358467"
+      height="8"
+      rx="4"
+      fill="#22C55E"/>
+
+    <text
+      x="710"
+      y="445"
+      fill="#F9FAFB"
+      font-family="monospace"
+      font-size="12"
+      font-weight="700">
+      11.95%
+    </text>
+    <text
+      x="32"
+      y="470"
+      fill="#9CA3AF"
+      font-family="monospace"
+      font-size="12">
+      KOTLIN
+    </text>
+
+    <rect
+      x="180"
+      y="460"
+      width="500"
+      height="8"
+      rx="4"
+      fill="#1F2937"/>
+
+    <rect
+      x="180"
+      y="460"
+      width="44.02017303446083"
+      height="8"
+      rx="4"
+      fill="#22C55E"/>
+
+    <text
+      x="710"
+      y="470"
+      fill="#F9FAFB"
+      font-family="monospace"
+      font-size="12"
+      font-weight="700">
+      8.80%
+    </text>
+    <text
+      x="32"
+      y="495"
+      fill="#9CA3AF"
+      font-family="monospace"
+      font-size="12">
+      CSS
+    </text>
+
+    <rect
+      x="180"
       y="485"
       width="500"
       height="8"
@@ -417,7 +417,7 @@ viewBox="0 0 900 520">
     <rect
       x="180"
       y="485"
-      width="7.096827910367102"
+      width="11.801396991227996"
       height="8"
       rx="4"
       fill="#22C55E"/>
@@ -429,6 +429,6 @@ viewBox="0 0 900 520">
       font-family="monospace"
       font-size="12"
       font-weight="700">
-      1.42%
+      2.36%
     </text>
 </svg>
