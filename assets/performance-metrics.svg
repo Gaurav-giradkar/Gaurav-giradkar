@@ -60,7 +60,7 @@ viewBox="0 0 900 520">
   font-family="monospace"
   font-size="15"
   font-weight="700">
-  168
+  169
 </text>
 
 <text x="32" y="168"
@@ -149,7 +149,7 @@ viewBox="0 0 900 520">
   font-family="monospace"
   font-size="40"
   font-weight="700">
-  229
+  230
 </text>
 
 <text
@@ -247,7 +247,7 @@ viewBox="0 0 900 520">
     <rect
       x="180"
       y="360"
-      width="211.95142526137556"
+      width="284.8659054526395"
       height="8"
       rx="4"
       fill="#22C55E"/>
@@ -259,7 +259,7 @@ viewBox="0 0 900 520">
       font-family="monospace"
       font-size="12"
       font-weight="700">
-      42.39%
+      56.97%
     </text>
     <text
       x="32"
@@ -281,7 +281,7 @@ viewBox="0 0 900 520">
     <rect
       x="180"
       y="385"
-      width="157.21547432423128"
+      width="99.0874805235549"
       height="8"
       rx="4"
       fill="#22C55E"/>
@@ -293,7 +293,7 @@ viewBox="0 0 900 520">
       font-family="monospace"
       font-size="12"
       font-weight="700">
-      31.44%
+      19.82%
     </text>
     <text
       x="32"
@@ -315,7 +315,7 @@ viewBox="0 0 900 520">
     <rect
       x="180"
       y="410"
-      width="87.74233696686879"
+      width="55.4106656472652"
       height="8"
       rx="4"
       fill="#22C55E"/>
@@ -327,7 +327,7 @@ viewBox="0 0 900 520">
       font-family="monospace"
       font-size="12"
       font-weight="700">
-      17.55%
+      11.08%
     </text>
     <text
       x="32"
@@ -349,7 +349,7 @@ viewBox="0 0 900 520">
     <rect
       x="180"
       y="435"
-      width="26.944670612110976"
+      width="47.83290573097685"
       height="8"
       rx="4"
       fill="#22C55E"/>
@@ -361,7 +361,7 @@ viewBox="0 0 900 520">
       font-family="monospace"
       font-size="12"
       font-weight="700">
-      5.39%
+      9.57%
     </text>
     <text
       x="32"
@@ -383,7 +383,7 @@ viewBox="0 0 900 520">
     <rect
       x="180"
       y="460"
-      width="16.146092835413402"
+      width="12.391594273964994"
       height="8"
       rx="4"
       fill="#22C55E"/>
@@ -395,6 +395,40 @@ viewBox="0 0 900 520">
       font-family="monospace"
       font-size="12"
       font-weight="700">
-      3.23%
+      2.48%
+    </text>
+    <text
+      x="32"
+      y="495"
+      fill="#9CA3AF"
+      font-family="monospace"
+      font-size="12">
+      DOCKERFILE
+    </text>
+
+    <rect
+      x="180"
+      y="485"
+      width="500"
+      height="8"
+      rx="4"
+      fill="#1F2937"/>
+
+    <rect
+      x="180"
+      y="485"
+      width="3"
+      height="8"
+      rx="4"
+      fill="#22C55E"/>
+
+    <text
+      x="710"
+      y="495"
+      fill="#F9FAFB"
+      font-family="monospace"
+      font-size="12"
+      font-weight="700">
+      0.06%
     </text>
 </svg>
